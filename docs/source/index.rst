@@ -9,5 +9,7 @@ Contents
 --------
 
 .. toctree::
+   :maxdepth: 2
+   :caption: Ulagam
 
    access
