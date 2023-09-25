@@ -1,14 +1,9 @@
-Welcome to Ulagam's documentation!
+Ulagam simulations!
 ===================================
 
-**Lumache** (/lu'make/) is a N-body simulation suite designed for full-sky analyses
+**Ulagam** is a N-body simulation suite designed for full-sky analyses of wide-field surveys.
 
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
-
-.. note::
-
-   This project is under active development.
+Check out the :doc:`access` section for further information
 
 Contents
 --------
