@@ -22,5 +22,6 @@ The maps are provided in the "fits.fz" format, which is a fits file compressed w
 The astropy fits class in python automatically reads in fits.fz files as
 
 .. code-block:: bash
+
     from astropy.io import fits
     d = fits.open(<path_to_density_shell>)[1].data
