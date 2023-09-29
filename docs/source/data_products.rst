@@ -28,7 +28,8 @@ The maps are provided in the "fits.fz" format, which is a fits file compressed w
     counts  = fits.open(<path_to_fits_fz>)[1].data
     density = counts/np.mean(counts) - 1
 
-All particles have the same mass, so converting from counts to density can be done using the raw counts (as the mass unit cancels out) and does not need info on the mass per particle.   
+All particles have the same mass, so converting from counts to density can be done using the raw counts (as the mass unit cancels out) and does not need info on the mass per particle. 
+
 =============
 3D Matter power spectrum
 =============
