@@ -18,7 +18,7 @@ The primary product of this suite are HEALPix maps of the counts of particles. T
     overdensity = counts/mean(counts) - 1
 
 
-The maps are provided in the "fits.fz" format, which is a fits file compressed with the fpack/unpack (https://heasarc.gsfc.nasa.gov/fitsio/fpack/) These do not need to be unzipped by the user. The astropy fits class in python automatically reads in fits.fz files as
+The maps are provided in the "fits.fz" format, which is a fits file compressed with the `fpack/funpack <https://heasarc.gsfc.nasa.gov/fitsio/fpack/>`_ These do not need to be unzipped by the user. The astropy fits class in python automatically reads in fits.fz files as
 
 .. code-block:: bash
 
