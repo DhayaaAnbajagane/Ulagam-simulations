@@ -35,10 +35,9 @@ All particles have the same mass, so converting from counts to density can be do
 Lensing convergence shells
 =============
 
-Instead of providing the raw lensing shells (which cannot be losslessly compressed due to their continuous nature and thus have large storage footprints) we provide scripts that can quickly (<5 min) can construct all lensing shells in the simulation using the density shells mentioned above. We also provide scripts to then estimate the lensing field in a given survey, when account for its associated n(z), and also scripts to convert the lensing convergence, "kappa", to the lensing shears "gamma 1, gamma 2".
+Instead of providing the raw lensing shells (which cannot be losslessly compressed due to their continuous nature and thus have large storage footprints) we provide scripts that can quickly (<5 min) can construct all lensing shells in the simulation using the density shells mentioned above. We also provide scripts to convert the lensing convergence, "kappa", to the lensing shears "gamma 1, gamma 2".
 
     1. Convert density to convergence
-    2. Incorporate n(z)
     3. Convert convergence to shears
 
 
