@@ -38,7 +38,7 @@ Lensing convergence shells
 Instead of providing the raw lensing shells (which cannot be losslessly compressed due to their continuous nature and thus have large storage footprints) we provide scripts that can quickly (<5 min) can construct all lensing shells in the simulation using the density shells mentioned above. We also provide scripts to convert the lensing convergence, "kappa", to the lensing shears "gamma 1, gamma 2".
 
     1. Convert density to convergence `HERE <https://github.com/DhayaaAnbajagane/Ulagam-simulations/blob/68f29a37de7d650a0dda8c0b4d624331cdb89239/scripts/kappa.py>`__
-    2. Convert convergence to shears
+    2. Convert convergence to shears `HERE <https://github.com/DhayaaAnbajagane/Ulagam-simulations/blob/e68aa1bc3569d4660db0948cd08f7fe888c902ca/scripts/kappa2shear.py>`__
 
 
 =============
