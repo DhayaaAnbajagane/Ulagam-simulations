@@ -1,7 +1,7 @@
 Ulagam simulations!
 ===================================
 
-.. image:: Ulagam_Logo.pdf
+.. image:: Ulagam_Logo.png
    :width: 65 %
    :align: center
 
