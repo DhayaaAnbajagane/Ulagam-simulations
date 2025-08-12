@@ -4,12 +4,14 @@
 Data access
 ***********
 
-Ulagam contains 4 terabytes of data and is stored in New York (Rusty cluster). The data can be accessed via Globus at `THIS LINK <https://app.globus.org/file-manager?origin_id=e0eae0aa-5bca-11ea-9683-0e56c063f437&origin_path=%2FUlagam%2F>`__.
+The original Ulagam simulations contain 4 terabytes of data and is stored in New York (Rusty cluster). The data can be accessed via Globus at `THIS LINK <https://app.globus.org/file-manager?origin_id=e0eae0aa-5bca-11ea-9683-0e56c063f437&origin_path=%2FUlagam%2F>`__. These sims contain the fiducial runs, as well as resimulations of the QUIJOTE initial conditions but now producing full-sky shells.
+
+The simulations of primordial physics introduced in Anbajagane & Lee (2025a) and Anbajagane & Lee (2025b) are hosted at the University of Chicago, on Midway2. The data can be accessed via Globus at `THIS LINK <https://app.globus.org/file-manager?origin_id=b0b9fe48-1f3f-40a0-9699-4de84a6fc62d>`__. This dataset contains additional products (rockstar catalogs, density fields) not produced for the original simulation set above.
 
 Globus
 ------
 
-*Based on the data access documentation from* `Quijote <https://quijote-simulations.readthedocs.io/en/latest/access.html>`__
+*Based on the data access documentation from* `Quijote <https://quijote-simulations.readthedocs.io/en/latest/access.html>`__ and relevant for accessing data on the Rusty Cluster.
 
 The data can be accessed through `globus <https://www.globus.org/>`__ at the publicly accessible link above. Note that to download the data to your local machine (e.g. laptop) you will need to install the globus connect personal. For further details see `here <https://github.com/franciscovillaescusa/Quijote-simulations/blob/master/documentation/globus.md>`_. We now provide some simple instructions to use globus.
 
