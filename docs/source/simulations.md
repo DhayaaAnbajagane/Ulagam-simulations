@@ -28,6 +28,9 @@ if you'd like a particular model!
 | LINRES_{w}     | Linear resonance bispectrum, with `w` being the frequency.|
 | LOGRES_{w}     | Logarithmic resonance bispectrum, with `w` being the frequency.|
 | K2COSRES_w{w}_a{alpha} | The K2cos mode of Adshead++. The frequency, w, and damping scale alpha are free params|
+| NBD2_{kc} | The NBD-mode2 as denoted in Planck. The characteristic scale kc is varied between 0.1, 0.2, and 0.6 in h/Mpc|
+| NBDsin_{w} | The NBD-sin as denoted in Planck. w is the frequency as usual.|
+| K2COSRES_w{w}_a{alpha} | The K2cos mode of Adshead++. The frequency, w, and damping scale alpha are free params|
 | LINRES_2_A{A}_w{w}     | Models with both bispectrum and power spectrum oscillations. The `p` and `m` vary fNL still. We provide `A` values of -1, and 1. And w is the frequency of the power spectrum oscillations only. The bispectrum frequency is fixed at w = 2 for this.|
 | LOGRES_2_A{A}_w{w}     | Same as above but for logarithmic resonance. So here the oscillations in P(k) are in log(k) to be consistent with bispectrum.|
 
