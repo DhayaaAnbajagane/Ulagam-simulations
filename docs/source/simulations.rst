@@ -1,8 +1,8 @@
 Simulation organization
-----------
-  
-Here is a quick table of what simulations are publicly available and how the file-names map to each simulations type. All sims except the `Fiducial` runs, have a `p` and `m` version, 
-which denotes whether they are a shift up/down from the fiducial in a given parameter. For the inflationary models, the parameter is `fNL`. Note that we separate the tables
+=======================
+
+Here is a quick table of what simulations are publicly available and how the file-names map to each simulations type. All sims except the ``Fiducial`` runs, have a ``p`` and ``m`` version,
+which denotes whether they are a shift up/down from the fiducial in a given parameter. For the inflationary models, the parameter is ``fNL``. Note that we separate the tables
 for the inflationary runs in our recent works and the Quijote-derived runs from the original paper as the former share no random seeds with Quijote whereas the latter are a precise match
 to Quijote and so can be used in tandem.
 
@@ -14,47 +14,50 @@ signatures, including cosmological collider models. We have 10 runs per model.
 For space reasons, not every single model from the papers were uploaded for this
 initial release. Please contact me if you'd like a particular model!
 
-+-------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Folder name       | Descriptions                                                                                                                                                                                                                                                       |
-+===================+====================================================================================================================================================================================================================================================================+
-| Gauss_fid         | Gaussian simulations (fNL = 0) with same random seed as the others. Useful for variance cancellation                                                                                                                         |
-+-------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Local             | Local-type                                                                                                                                                                                                                                                         |
-+-------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Equilateral       | Equilateral-type                                                                                                                                                                                                                                                   |
-+-------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| Orthogonal        | Orthogonal type, using the first, simpler template of Senatore. In Quijote this is called OR-CMB                                                                                                                             |
-+-------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| QSF_{nu}          | Simulations of the Quasi Single Field model. nu is the mass in Hubble units                                                                                                                                                                                        |
-+-------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| SI_{mu}           | Simulations of the Scalar-I template. mu is the mass in Hubble units                                                                                                                                                                                               |
-+-------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| SII_{mu}          | Simulations of the Scalar-II template. mu is the mass in Hubble units                                                                                                                                                                                              |
-+-------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| HSC_{s}           | Simulations of the heavy-spin collider. s is the (integer) spin                                                                                                                                                                                                    |
-+-------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| LSC_{-logalpha}   | Simulations of the low-speed collider. Alpha is a scaling parameter and depends on the sound speed and particle mass. LSC_0 corresponds to alpha = 1, and LSC_3 corresponds to alpha = 1e-3                                   |
-+-------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| MSC_{-logc1...}   | Simulations of the multi-speed collider. MSC_110 is c1 = c2 = 1e-1 and c3 = 1; MSC_200 is c1 = 1e-2, c2 = c3 = 1, for example                                                                                                |
-+-------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| LSD_SF_{n}        | Scale-dependent local PNG with n the spectral index. Assumes only a single field exhibits scale dependence                                                                                                                   |
-+-------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| LSD_MF_{n}        | Scale-dependent local PNG with n the spectral index. Assumes multiple fields exhibit scale dependence                                                                                                                        |
-+-------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| LINRES_{w}        | Linear resonance bispectrum, with `w` the frequency                                                                                                                                                                                                                |
-+-------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| LOGRES_{w}        | Logarithmic resonance bispectrum, with `w` the frequency                                                                                                                                                                                                           |
-+-------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| K2COSRES_w{w}_a{α}| The K2cos mode of Adshead++. The frequency `w` and damping scale `α` are free parameters                                                                                                                                                                           |
-+-------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| NBD2_{kc}         | The NBD-mode2 as denoted in Planck. The characteristic scale kc is varied between 0.1, 0.2, and 0.6 h/Mpc                                                                                                                    |
-+-------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| NBDsin_{w}        | The NBD-sin as denoted in Planck. `w` is the frequency                                                                                                                                                                                                             |
-+-------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| LINRES_2_A{A}_w{w}| Models with both bispectrum and power spectrum oscillations. The `p` and `m` vary fNL still. Provided `A` values are -1 and 1. `w` is the frequency of the power spectrum oscillations only (bispectrum frequency fixed at 2). |
-+-------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-| LOGRES_2_A{A}_w{w}| Same as above but for logarithmic resonance: oscillations in P(k) are in log(k) to be consistent with bispectrum                                                                                                             |
-+-------------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+.. list-table::
+   :widths: 20 80
+   :header-rows: 1
+
+   * - Folder name
+     - Descriptions
+   * - Gauss_fid
+     - Gaussian simulations (fNL = 0) with same random seed as the others. Useful for variance cancellation.
+   * - Local
+     - Local-type
+   * - Equilateral
+     - Equilateral-type
+   * - Orthogonal
+     - Orthogonal type, using the first, simpler template of Senatore. In Quijote this is called OR-CMB.
+   * - QSF_{nu}
+     - Simulations of the Quasi Single Field model. ``nu`` is the mass in Hubble units.
+   * - SI_{mu}
+     - Simulations of the Scalar-I template. ``mu`` is the mass in Hubble units.
+   * - SII_{mu}
+     - Simulations of the Scalar-II template. ``mu`` is the mass in Hubble units.
+   * - HSC_{s}
+     - Simulations of the heavy-spin collider. ``s`` is the (integer) spin.
+   * - LSC_{-logalpha}
+     - Simulations of the low-speed collider. ``alpha`` is a scaling parameter set by sound speed and particle mass. ``LSC_0`` corresponds to ``alpha = 1``; ``LSC_3`` corresponds to ``alpha = 1e-3``.
+   * - MSC_{-logc1...}
+     - Simulations of the multi-speed collider. ``MSC_110`` is ``c1 = c2 = 1e-1`` and ``c3 = 1``; ``MSC_200`` is ``c1 = 1e-2``, ``c2 = c3 = 1``, for example.
+   * - LSD_SF_{n}
+     - Scale-dependent local PNG with ``n`` the spectral index. Assumes only a single field exhibits scale dependence.
+   * - LSD_MF_{n}
+     - Scale-dependent local PNG with ``n`` the spectral index. Assumes multiple fields exhibit scale dependence.
+   * - LINRES_{w}
+     - Linear resonance bispectrum, with ``w`` the frequency.
+   * - LOGRES_{w}
+     - Logarithmic resonance bispectrum, with ``w`` the frequency.
+   * - K2COSRES_w{w}_a{alpha}
+     - K2cos mode of Adshead++. The frequency ``w`` and damping scale ``alpha`` are free parameters.
+   * - NBD2_{kc}
+     - NBD-mode 2 (Planck). The characteristic scale ``kc`` is varied between 0.1, 0.2, and 0.6 (h/Mpc).
+   * - NBDsin_{w}
+     - NBD-sin (Planck). ``w`` is the frequency.
+   * - LINRES_2_A{A}_w{w}
+     - Both bispectrum and power-spectrum oscillations. The ``p`` and ``m`` still vary ``fNL``. We provide ``A`` values of ``-1`` and ``1``. ``w`` is the frequency of **P(k)** oscillations only (bispectrum frequency fixed at ``2``).
+   * - LOGRES_2_A{A}_w{w}
+     - Same as above but for logarithmic resonance (oscillations in **P(k)** are in ``log(k)``, consistent with the bispectrum).
 
 
 Ulagam 2023
@@ -65,25 +68,29 @@ index 3 is the same as the simulation under index 3 in Quijote as well. We have
 verified the density fields are consistent. We have 2600 fiducial runs and 100 runs
 at the other setups.
 
-+-----------+------------------------------------------------------------------------------------------------------------------+
-| Folder    | Descriptions                                                                                                     |
-+===========+==================================================================================================================+
-| fiducial  | Simulations at fiducial cosmology, using Quijote initial conditions                                              |
-+-----------+------------------------------------------------------------------------------------------------------------------+
-| Om        | Variation in matter energy density fraction, Ω_m                                                                 |
-+-----------+------------------------------------------------------------------------------------------------------------------+
-| s8        | Variation in rms amplitude of fluctuations at z = 0, σ₈                                                          |
-+-----------+------------------------------------------------------------------------------------------------------------------+
-| ns        | Variation in primordial spectral tilt, n_s                                                                       |
-+-----------+------------------------------------------------------------------------------------------------------------------+
-| w         | Variation in dark energy equation of state                                                                        |
-+-----------+------------------------------------------------------------------------------------------------------------------+
-| LC        | The local-type non-Gaussianity                                                                                   |
-+-----------+------------------------------------------------------------------------------------------------------------------+
-| EQ        | The equilateral-type non-Gaussianity                                                                             |
-+-----------+------------------------------------------------------------------------------------------------------------------+
-| OR_CMB    | Orthogonal-type non-Gaussianity, using the original template from Senatore with incorrect squeezed-limit scaling |
-+-----------+------------------------------------------------------------------------------------------------------------------+
-| OR_LSS    | Orthogonal-type non-Gaussianity, using the modified template from Senatore with correct squeezed-limit scaling   |
-+-----------+------------------------------------------------------------------------------------------------------------------+
+
+.. list-table::
+   :widths: 18 82
+   :header-rows: 1
+
+   * - Folder
+     - Descriptions
+   * - fiducial
+     - Simulations at fiducial cosmology, using Quijote initial conditions.
+   * - Om
+     - Variation in matter energy density fraction, ``Omega_m``.
+   * - s8
+     - Variation in rms amplitude of fluctuations at ``z = 0``, ``sigma_8``.
+   * - ns
+     - Variation in primordial spectral tilt, ``n_s``.
+   * - w
+     - Variation in dark energy equation of state.
+   * - LC
+     - Local-type non-Gaussianity.
+   * - EQ
+     - Equilateral-type non-Gaussianity.
+   * - OR_CMB
+     - Orthogonal-type non-Gaussianity using the original Senatore template (incorrect squeezed-limit scaling).
+   * - OR_LSS
+     - Orthogonal-type non-Gaussianity using the modified Senatore template (correct squeezed-limit scaling).
 
