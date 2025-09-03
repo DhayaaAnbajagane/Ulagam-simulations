@@ -8,6 +8,8 @@ The original Ulagam simulations contain 4 terabytes of data and is stored in New
 
 The simulations of primordial physics introduced in Anbajagane & Lee (2025a) and Anbajagane & Lee (2025b) are hosted at the University of Chicago, on Midway2. The data can be accessed via Globus at `THIS LINK <https://app.globus.org/file-manager?origin_id=b0b9fe48-1f3f-40a0-9699-4de84a6fc62d>`__. This dataset contains additional products (rockstar catalogs, density fields) not produced for the original simulation set above.
 
+The folder name details for the different runs are detailed in the `simulations page <simulations.md>`_
+
 Globus
 ------
 
