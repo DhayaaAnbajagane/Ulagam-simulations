@@ -8,6 +8,8 @@ The original release of the Ulagam simulations contain the following data produc
 
 The new simulations introduced in Anbajagane & Lee (2025a) and Anbajagane & Lee (2025b) contain a number of products: (1) Full-sky density shells, (2) 3D matter power spectrum, (3) 3D matter bispectrum, (4) 3D density fields, (5) rockstar catalogs.
 
+You can see what simulations are available at `the simulations page <simulations.md>`_
+
 
 =============
 Density field/shell
